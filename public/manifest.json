@@ -1,0 +1,10 @@
+{
+  "name": "my-demo-extension",
+  "version": "0.1.0",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "permissions": ["https://github.com/*"],
+  "manifest_version": 2
+}
