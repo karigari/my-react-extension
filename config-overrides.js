@@ -16,21 +16,5 @@ module.exports = function override(config, env) {
   config.plugins.push(new WriteFilePlugin());
   fs.removeSync(buildPath);
   fs.copySync("./public/", buildPath);
-
-  // Run helper scripts
-  //   helpers.updateBackground(buildPath);
-  //   helpers.updateManifestKey(buildPath);
-
-  // Add localhost to the manifest permissions on local
-  //   if (process.env.REACT_APP_BACKEND_ENV === "local") {
-  //     helpers.updatePermissionsForLocalhost(buildPath);
-  //   }
-
-  // Modules resolve config
-  //   config.resolve.modules = [
-  //     path.resolve(__dirname, "src/components"),
-  //     "node_modules"
-  //   ];
-
   return config;
 };
